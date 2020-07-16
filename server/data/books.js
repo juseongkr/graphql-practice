@@ -1,0 +1,81 @@
+const books = [
+    {
+        id: 1,
+        title: "Hunter Of Tomorrow",
+        published: 1990,
+        author: "Finn Wilkerson",
+        genres: ["Parody", "High Fantasy"],
+    },
+    {
+        id: 2,
+        title: "Officer Without Desire",
+        published: 1893,
+        author: "Edmund Paul",
+        genres: ["Biography"],
+    },
+    {
+        id: 3,
+        title: "Gods Of Dreams",
+        published: 2002,
+        author: "Giselle Conroy",
+        genres: ["Classic", "Romance"],
+    },
+    {
+        id: 4,
+        title: "Gods Without Direction",
+        published: 2010,
+        author: "Vicki Nairn",
+        genres: ["Parody", "Classic"],
+    },
+    {
+        id: 5,
+        title: "Foreigners And Owls",
+        published: 1985,
+        author: "Finn Wilkerson",
+        genres: ["Absurdist"],
+    },
+    {
+        id: 6,
+        title: "Ascension Of History",
+        published: 1999,
+        author: "Finn Wilkerson",
+        genres: ["Thriller", "Horror", "Mystery"],
+    },
+    {
+        id: 7,
+        title: "Battle Of The Maze",
+        published: 2012,
+        author: "Alishia Hail",
+        genres: ["Horror"],
+    },
+    {
+        id: 8,
+        title: "Bandits And Humans",
+        published: 2000,
+        author: "Mahdi Phelps",
+        genres: ["Parody", "Horror"],
+    },
+    {
+        id: 9,
+        title: "Honor Of Gold",
+        published: 1939,
+        author: "Unknown",
+        genres: ["Thriller", "Adventure", "High Fantasy", "Mystery"],
+    },
+    {
+        id: 10,
+        title: "Tortoise Of Earth",
+        published: 1999,
+        author: "Lacey-May Harding",
+        genres: ["Period Romance"],
+    },
+    {
+        id: 11,
+        title: "Victory Of The Solstice",
+        published: 1999,
+        author: "Lacey-May Harding",
+        genres: ["Adventure", "Sketch Comedy"],
+    },
+]
+
+module.exports = books
