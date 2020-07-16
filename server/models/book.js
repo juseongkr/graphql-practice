@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 const uniqueValidator = require('mongoose-unique-validator')
 
 const schema = new mongoose.Schema({
-    id: {
+    isbn: {
         type: Number,
         required: true,
         unique: true,
@@ -12,7 +12,7 @@ const schema = new mongoose.Schema({
     title: {
         type: String,
         required: true,
-        unique: true,
+        unique: false,
         minlength: 2,
     },
 

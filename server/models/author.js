@@ -2,13 +2,13 @@ const mongoose = require('mongoose')
 const uniqueValidator = require('mongoose-unique-validator')
 
 const schema = new mongoose.Schema({
-    id: {
+    ssn: {
         type: Number,
         unique: true,
         required: true,
         minlength: 1,
     },
-
+    
     name: {
         type: String,
         required: true,

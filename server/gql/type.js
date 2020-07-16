@@ -2,7 +2,7 @@ const { gql } = require('apollo-server')
 
 const typeDefs = gql`
 type Book {
-    id: String!
+    isbn: Int
     title: String!
     published: Int!
     author: String!
@@ -10,6 +10,7 @@ type Book {
 }
 
 type Author {
+    ssn: Int
     name: String!
     bookCount: Int!
     birth: Int
@@ -24,10 +25,17 @@ type Query {
     ): [Author!]!
     bookCount: Int!
     authorCount: Int!
+    findBook(
+        title: String!
+    ): Book
+    findAuthor(
+        name: String!
+    ): Author
 }
 
 type Mutation {
     addBook(
+        isbn: Int!,
         title: String!,
         author: String!,
         published: Int!,
@@ -35,6 +43,7 @@ type Mutation {
     ): Book!
     addAuthor(
         name: String!,
+        ssn: Int!,
         birth: Int,
     ): Author!
     updateAuthorBirth(
@@ -42,7 +51,8 @@ type Mutation {
         setBirth: Int!,
     ): Author
     updateBookAuthor(
-        title: String!
+        isbn: Int!,
+        title: String!,
         setAuthor: String!,
     ): Book
 }

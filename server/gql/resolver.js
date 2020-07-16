@@ -20,6 +20,8 @@ const resolvers = {
 
         bookCount: () => Book.collection.countDocuments(),
         authorCount: () => Author.collection.countDocuments(),
+        findBook: (root, args) => Book.findOne({ title: args.title }),
+        findAuthor: (root, args) => Author.findOne({ name: args.name }),
     },
 
     Mutation: {
